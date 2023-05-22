@@ -1,4 +1,4 @@
-# list 
+# list  they are modificable
 friends = [ 'Josehp', 'Glen', 'sail']
 carryon = [ 'socks', 'shirt', 'perfume']
 
@@ -60,3 +60,18 @@ while True:
 
 average = sum(numlist)/len(numlist)
 print('Average: ', average)
+
+
+
+########### String with list
+abc = 'With three words'
+stuff = abc.split() 
+# this methodt separates the words by space and convert in a list
+# but also can send another paramether
+print(stuff)
+print(len(stuff)
+
+
+line = 'first;second;third'
+thing = line.split(';')
+print(thing)
