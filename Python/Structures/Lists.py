@@ -75,3 +75,10 @@ print(len(stuff)
 line = 'first;second;third'
 thing = line.split(';')
 print(thing)
+      
+      
+      
+words = 'His e-mail is q-lar@freecodecamp.org'
+pieces = words.split()
+parts = pieces[3].split('-')
+n = parts[1]      
