@@ -15,3 +15,15 @@ while True:
 	print(line)
 
 print("Done!")
+
+#define loop 
+for ii in [ 5,4,3,2,1]
+	print(ii)
+print ( 'Game over')
+#out 
+#5
+#4
+#3
+#2
+#1
+#Game over
