@@ -33,7 +33,7 @@ print ('HI There'.lower())	#hi there
 
 fruit = 'banana'
 pos = fruit.find('na')
-print (pos) #the result is 2
+print (pos) #the result is 2 because is for posicions 
 
 
 greet = 'Hello Bob'
