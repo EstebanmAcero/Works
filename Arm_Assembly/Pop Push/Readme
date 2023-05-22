@@ -1,2 +1,8 @@
 
-this is a work that makes use of the ARM assembler language so that it is called in a main file in c where the functions are called in .spara to use a 7 X 4 display with which to have two different counters of two digits (tens and units) so that when pressing a button it indicates which is the direction in which the counters should go, that is if it counts one by one or two by two, the first counter is ascending and takes the even numbers; the second is descending and takes the odd ones.
+this is a work that makes use of the ARM assembler language so that 
+it is called in a main file in c where the functions are called in .s 
+to use a 7 X 4 display with which to have two different counters of 
+two digits (tens and units) so that when pressing a button it indicates 
+which is the direction in which the counters should go, that is if
+it counts one by one or two by two, the first counter is ascending and 
+takes the even numbers; the second is descending and takes the odd ones.
