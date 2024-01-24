@@ -267,6 +267,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: additional_table; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.additional_table VALUES (1, 'Row 1', 123, true);
+INSERT INTO public.additional_table VALUES (2, 'Row 2', 456, false);
+INSERT INTO public.additional_table VALUES (3, 'Row 12', 789, true);
 
 
 --
@@ -275,6 +278,10 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 
 INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'Our home galaxy', 13000, 'Spiral');
 INSERT INTO public.galaxy VALUES (2, 'Andromeda', 'Closest spiral galaxy to Milky Way', 22000, 'Spiral');
+INSERT INTO public.galaxy VALUES (8, 'Messier 87', 'Located in the Virgo Cluster', 6420, 'Elliptical');
+INSERT INTO public.galaxy VALUES (9, 'Sombrero', 'Known for its bright nucleus and large central bulge', 9500, 'Spiral');
+INSERT INTO public.galaxy VALUES (10, 'Whirlpool', 'Interacting with a smaller galaxy', 5500, 'Spiral');
+INSERT INTO public.galaxy VALUES (11, 'Triangulum', 'Third-largest galaxy in the Local Group', 13000, 'Spiral');
 
 
 --
@@ -283,6 +290,34 @@ INSERT INTO public.galaxy VALUES (2, 'Andromeda', 'Closest spiral galaxy to Milk
 
 INSERT INTO public.moon VALUES (1, 'Moon', true, 0.384, 1);
 INSERT INTO public.moon VALUES (2, 'Phobos', true, 0.0094, 2);
+INSERT INTO public.moon VALUES (3, 'Deimos', true, 0.0234, 2);
+INSERT INTO public.moon VALUES (4, 'Europa', true, 0.6711, 34);
+INSERT INTO public.moon VALUES (5, 'Ganymede', true, 1.0704, 34);
+INSERT INTO public.moon VALUES (6, 'Callisto', true, 1.8827, 34);
+INSERT INTO public.moon VALUES (7, 'Titan', true, 1.222, 36);
+INSERT INTO public.moon VALUES (8, 'Enceladus', true, 1.271, 35);
+INSERT INTO public.moon VALUES (9, 'Triton', true, 0.3548, 38);
+INSERT INTO public.moon VALUES (10, 'Io', true, 0.4218, 34);
+INSERT INTO public.moon VALUES (11, 'Charon', true, 0.1957, 37);
+INSERT INTO public.moon VALUES (12, 'Phoebe', true, 13.17, 39);
+INSERT INTO public.moon VALUES (13, 'Lapetus', true, 3.5613, 39);
+INSERT INTO public.moon VALUES (14, 'Hyperion', true, 1.481, 39);
+INSERT INTO public.moon VALUES (15, 'Miranda', true, 0.1298, 2);
+INSERT INTO public.moon VALUES (16, 'Tethys', true, 1.097, 35);
+INSERT INTO public.moon VALUES (17, 'Rhea', true, 1.527, 35);
+INSERT INTO public.moon VALUES (18, 'Dione', true, 1.234, 35);
+INSERT INTO public.moon VALUES (19, 'Mimas', true, 0.1855, 35);
+INSERT INTO public.moon VALUES (20, 'Oberon', true, 0.764, 38);
+INSERT INTO public.moon VALUES (21, 'Titania', true, 0.788, 38);
+INSERT INTO public.moon VALUES (22, 'Ariel', true, 0.191, 38);
+INSERT INTO public.moon VALUES (23, 'Umbriel', true, 0.266, 38);
+INSERT INTO public.moon VALUES (24, 'Proteus', true, 0.1176, 35);
+INSERT INTO public.moon VALUES (25, 'Charon 2', true, 0.132, 37);
+INSERT INTO public.moon VALUES (26, 'Nereid', true, 0.5514, 36);
+INSERT INTO public.moon VALUES (27, 'Proteus 2', true, 0.136, 35);
+INSERT INTO public.moon VALUES (28, 'Charon 3', true, 0.134, 37);
+INSERT INTO public.moon VALUES (29, 'Proteus 3', true, 0.137, 35);
+INSERT INTO public.moon VALUES (30, 'Charon 4', true, 0.135, 37);
 
 
 --
@@ -291,6 +326,18 @@ INSERT INTO public.moon VALUES (2, 'Phobos', true, 0.0094, 2);
 
 INSERT INTO public.planet VALUES (1, 'Earth', true, 'Terrestrial', 1);
 INSERT INTO public.planet VALUES (2, 'Mars', false, 'Terrestrial', 1);
+INSERT INTO public.planet VALUES (31, 'Venus', false, 'Terrestrial', 1);
+INSERT INTO public.planet VALUES (32, 'Jupiter', false, 'Gas Giant', 2);
+INSERT INTO public.planet VALUES (33, 'Saturn', false, 'Gas Giant', 2);
+INSERT INTO public.planet VALUES (34, 'Neptune', false, 'Ice Giant', 13);
+INSERT INTO public.planet VALUES (35, 'Mercury', false, 'Terrestrial', 1);
+INSERT INTO public.planet VALUES (36, 'Uranus', false, 'Ice Giant', 2);
+INSERT INTO public.planet VALUES (37, 'Pluto', false, 'Dwarf Planet', 1);
+INSERT INTO public.planet VALUES (38, 'Exoplanet 1', false, 'Exoplanet', 14);
+INSERT INTO public.planet VALUES (39, 'Exoplanet 2', false, 'Exoplanet', 14);
+INSERT INTO public.planet VALUES (40, 'Exoplanet 3', false, 'Exoplanet', 14);
+INSERT INTO public.planet VALUES (41, 'Exoplanet 4', false, 'Exoplanet', 14);
+INSERT INTO public.planet VALUES (42, 'Exoplanet 5', false, 'Exoplanet', 14);
 
 
 --
@@ -299,41 +346,47 @@ INSERT INTO public.planet VALUES (2, 'Mars', false, 'Terrestrial', 1);
 
 INSERT INTO public.star VALUES (1, 'Sun', false, true, 0, 1);
 INSERT INTO public.star VALUES (2, 'Alpha Centauri', false, true, 4.37, 1);
+INSERT INTO public.star VALUES (11, 'Betelgeuse', false, true, 642.5, 2);
+INSERT INTO public.star VALUES (12, 'Sirius', false, true, 8.6, 1);
+INSERT INTO public.star VALUES (13, 'Proxima Centauri', false, true, 4.24, 1);
+INSERT INTO public.star VALUES (14, 'Antares', false, true, 550, 2);
+INSERT INTO public.star VALUES (15, 'Vega', false, true, 25.04, 1);
+INSERT INTO public.star VALUES (16, 'Rigel', false, true, 860, 2);
 
 
 --
 -- Name: additional_table_additional_table_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.additional_table_additional_table_id_seq', 1, false);
+SELECT pg_catalog.setval('public.additional_table_additional_table_id_seq', 3, true);
 
 
 --
 -- Name: galaxy_galaxy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 2, true);
+SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 11, true);
 
 
 --
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 2, true);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 30, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 2, true);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 42, true);
 
 
 --
 -- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.star_star_id_seq', 2, true);
+SELECT pg_catalog.setval('public.star_star_id_seq', 16, true);
 
 
 --
